@@ -7,14 +7,14 @@ words_list = ['elephant','cycle','sunshine','symphony','mountain','octopus','gal
 randomword = random.choice(words_list)
 correctoutput = [char for char in randomword]
 
-output = ['_' for ele in randomword] #makes a list of underscores for each char in word
+output = ['_' for ele in randomword] 
 guesses = 5
 print (output , "\nNumber of guesses: ", guesses)
 
 while (guesses!=0 and output != correctoutput):
     myguess = input('Enter your guess: ')
     if myguess in randomword:
-        for index,char in enumerate(randomword): #enumerate keeps track of element and its index at the same time(pehle index fir element)
+        for index,char in enumerate(randomword):
             if char == myguess:
                 output[index]=myguess
         print (output , "\nNumber of guesses left: " , guesses)
