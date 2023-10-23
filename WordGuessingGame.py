@@ -25,4 +25,4 @@ while (guesses!=0 and output != correctoutput):
 if guesses==0:
     print("You lost \nThe word was: " , randomword)
 elif output==correctoutput:
-    print("You win \nThw word was: " , randomword)
+    print("You win \nThe word was: " , randomword)
